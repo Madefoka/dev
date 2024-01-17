@@ -33,9 +33,9 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["bear-app-rx4e.onrender.com"]
 
-#CSRF_TRUSTED_ORIGINS = ["https://"]
+CSRF_TRUSTED_ORIGINS = ["https://bear-app-rx4e.onrender.com"]
 
 
 # Application definition

@@ -1,0 +1,45 @@
+{% load static %}
+
+<html>
+
+<head>
+    <title>Delete | Bear App</title>
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/morph/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+</head>
+{% include "bear/account-navbar.html" %}
+<br><br>
+
+<div class="container bg-white shadow-md p-5 form-layout">
+    <h1>Delete account</h1>
+    <br>
+
+    <form method="POST" autocomplete="off">
+        {% csrf_token %}
+
+        <p>Are you sure you want to delete your account?</p>
+        <br>
+        <a href="{% url 'profile-management' %}">Go back</a>
+        <br><br>
+        <input class="btn btn-danger" type="submit" value="Confirm account deletion" />
+        <br>
+
+    </form>
+
+</div><br>
+
+
+
+<script src="{% static 'js/app.js' %}"> </script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+
+    crossorigin="anonymous">
+
+</script>
+
+</html>
